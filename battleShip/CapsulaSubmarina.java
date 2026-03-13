@@ -1,23 +1,9 @@
 import java.util.*;
 
-/**
- * Write a description of class CapsulaSubmarina here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class CapsulaSubmarina extends Machine implements MaquinaNodriza{
 
     private MaquinaNodriza maquinaNodriza;
     private Collection<CapsulaSubmarina> capsulas = new ArrayList<>();
-
-    /**
-     * Constructor for objects of class CapsulaSubmarina
-     */
-    public CapsulaSubmarina(MaquinaNodriza nodriza)
-    {
-        maquinaNodriza = nodriza;
-    }
 
     /**
      * devuelve una instruccion
@@ -47,5 +33,16 @@ public class CapsulaSubmarina extends Machine implements MaquinaNodriza{
     @Override
     public boolean willBeDestroyed(int longitude, int latitude){
         return false;
+    }
+    
+    /**
+     * orden para que la capsula que se autodestruya
+     * 
+     * @param reason razon por la que se le ordeno que se autodestruyera
+     */
+    @Override
+    public void autoDestruction(String reason){
+        super.destroyed = true;
+        super.reasonDestruction = reason;
     }
 }

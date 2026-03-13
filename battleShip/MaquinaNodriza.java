@@ -11,7 +11,6 @@ public interface MaquinaNodriza
     /**
      * Las maquinas Nodrizas tienen como responsabilidad dar instrucciones
      * 
-     * 
      * @return devuelve un String con instrucciones especificas
      */
     String giveInstruction();
