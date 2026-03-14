@@ -12,6 +12,4 @@ comment3.text=\r\n\ hace\ que\ todas\ las\ maquinas\ de\ la\ flota\ que\ no\ se\
 comment4.params=
 comment4.target=java.util.ArrayList\ destroyedMachines()
 comment4.text=\r\n\ Determina\ todas\ las\ m\u00E1quinas\ y\ marinos\ que\ se\ encuentran\ destruidos.\r\n\ \r\n\ @return\ devuelve\ un\ arraylist\ con\ los\ elementos\ destruidos\r\n
-comment5.params=
-comment5.target=void\ updateCapsulesState()
-numComments=6
+numComments=5

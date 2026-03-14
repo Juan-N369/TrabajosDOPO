@@ -85,12 +85,5 @@ public class Fleet {
         return destroyed;
     }
     
-    public void updateCapsulesState() {
-        for (Machine m : machines) {
-            if (m instanceof CapsulaSubmarina) {
-                CapsulaSubmarina capsula = (CapsulaSubmarina) m;
-                capsula.verifyMotherMachine();
-            }
-        }
-    }
+    
 }
