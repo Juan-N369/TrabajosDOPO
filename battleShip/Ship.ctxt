@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Ship
+comment1.params=longitude\ latitude\ sailors
+comment1.target=Ship(int,\ int,\ java.util.Collection)
+comment1.text=\r\n\ Crea\ un\ barco\ con\ una\ posici\u00F3n\ inicial\ y\ una\ colecci\u00F3n\ de\ marinos.\r\n\r\n\ @param\ longitude\ longitud\ inicial\ del\ barco\r\n\ @param\ latitude\ latitud\ inicial\ del\ barco\r\n\ @param\ sailors\ marinos\ asignados\ al\ barco\r\n
+comment2.params=
+comment2.target=boolean\ isWeak()
+comment2.text=\r\n\ determina\ si\ un\ barco\ es\ debil\r\n\ \r\n\ @return\ devuelve\ false\ si\ el\ barco\ tiene\ 5\ o\ mas\ marineros,\ de\ lo\ contrario\ retorna\r\n\ true\r\n
+comment3.params=
+comment3.target=java.util.Collection\ getSailors()
+comment3.text=\r\n\ Retorna\ la\ colecci\u00F3n\ de\ marinos\ del\ barco.\r\n\r\n\ @return\ colecci\u00F3n\ de\ marinos\r\n
+comment4.params=instruction
+comment4.target=void\ setInstruction(java.lang.String)
+comment4.text=\r\n\ Cambia\ la\ instrucci\u00F3n\ actual\ del\ barco.\r\n\r\n\ @param\ instruction\ nueva\ instrucci\u00F3n\ del\ barco\r\n
+comment5.params=
+comment5.target=java.lang.String\ giveInstruction()
+comment5.text=\r\n\ sirve\ para\ dar\ instrucciones\ a\ las\ capsulas\ que\ lo\ deseen\r\n\ \r\n\ @return\ devuelve\ una\ cadena\ con\ instruccion\r\n
+comment6.params=capsula
+comment6.target=void\ addCapsula(CapsulaSubmarina)
+comment6.text=\r\n\ Registra\ una\ c\u00E1psula\ dependiente\ de\ este\ barco.\r\n\r\n\ @param\ capsula\ c\u00E1psula\ dependiente\r\n
+comment7.params=reason
+comment7.target=void\ autoDestruction(java.lang.String)
+comment7.text=\r\n\ Le\ da\ la\ orden\ al\ barco\ de\ que\ se\ destruya\ y\ por\ ende\ se\r\n\ destruir\u00E1n\ todas\ las\ c\u00E1psulas\ que\ tengan\ como\ nodriza\ al\ barco.\r\n\r\n\ @param\ reason\ raz\u00F3n\ por\ la\ que\ se\ dio\ la\ orden\r\n
+numComments=8

@@ -6,6 +6,21 @@ public class Plane extends Machine {
     private Sailor copilot;
     
     /**
+     * Crea un avión con su posición inicial y su placa.
+     *
+     * @param longitude longitud inicial del avión
+     * @param latitude latitud inicial del avión
+     * @param plate placa del avión
+     */
+    public Plane(int longitude, int latitude, String plate) {
+        super(longitude, latitude);
+        this.plate = plate;
+        inAir = false;
+        pilot = null;
+        copilot = null;
+    }
+    
+    /**
      * determina si el avion es debil
      * 
      * @return devuelve false si el avion tiene un piloto principal, de lo contrario
@@ -27,6 +42,20 @@ public class Plane extends Machine {
      */
     public boolean isInAir(){
         return inAir;
+    }
+    
+    @Override
+    public boolean willBeDestroyed(int longitude, int latitude) {
+        if (inAir) {
+            return false;
+        }
+        return super.willBeDestroyed(longitude, latitude);
+    }
+    
+    @Override
+    public void autoDestruction(String reason) {
+        super.destroyed = true;
+        super.reasonDestruction = reason;
     }
     
 }

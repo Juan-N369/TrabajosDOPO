@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Sailor
+comment1.params=
+comment1.target=boolean\ wasDestroyed()
+comment1.text=\r\n\ dice\ si\ el\ marinero\ fue\ destruido\r\n\ \r\n\ @param\ true\ si\ o\ fue,\ false\ si\ no\r\n
+comment2.params=reason
+comment2.target=void\ autoDestruction(java.lang.String)
+comment2.text=\r\n\ le\ da\ la\ orden\ al\ marinero\ de\ eliminarse\r\n\ \r\n\ @param\ reason\ es\ la\ razon\ por\ la\ cual\ se\ dio\ la\ orden\r\n
+comment3.params=
+comment3.target=java.lang.String\ getReasonDestruction()
+numComments=4

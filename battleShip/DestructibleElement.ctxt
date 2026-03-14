@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=DestructibleElement
+comment0.text=\r\n\ Write\ a\ description\ of\ interface\ DestructibleElement\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=boolean\ wasDestroyed()
+comment1.text=\r\n\ determina\ si\ el\ objeto\ fue\ destruido\r\n
+comment2.params=reason
+comment2.target=void\ autoDestruction(java.lang.String)
+comment2.text=\r\n\ provoca\ que\ el\ objeto\ se\ autodestruya\r\n\ \r\n\ @param\ razon\ por\ la\ que\ se\ autodestruyo\r\n
+comment3.params=
+comment3.target=java.lang.String\ getReasonDestruction()
+numComments=4

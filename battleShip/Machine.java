@@ -5,6 +5,16 @@ public abstract class Machine implements DestructibleElement{
     protected String reasonDestruction = null;
     
     /**
+     * Crea una máquina en una posición inicial.
+     *
+     * @param longitude longitud inicial
+     * @param latitude latitud inicial
+     */
+    public Machine(int longitude, int latitude) {
+        location = new Position(longitude, latitude);
+    }
+    
+    /**
      * metodo que dice si la maquina es debil o no
      * 
      * @return devuelve false ya que por defecto una maquina no se considera debil
@@ -36,7 +46,7 @@ public abstract class Machine implements DestructibleElement{
      * @param dLat dezplazamiento en latitud
      */
     public void advance(int dLon, int dLat){
-        
+        location.move(dLon, dLat);
     }
     
     /**
@@ -68,4 +78,13 @@ public abstract class Machine implements DestructibleElement{
         pueden autodestruirse*/
     }
     
+    /**
+     * Retorna la razón por la que la máquina fue destruida.
+     *
+     * @return razón de destrucción
+     */
+    @Override
+    public String getReasonDestruction() {
+        return reasonDestruction;
+    }
 }

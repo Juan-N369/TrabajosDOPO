@@ -23,4 +23,8 @@ public class Sailor implements DestructibleElement{
         destroyed = true;
         reasonDestruction = reason;
     }
+    
+    public String getReasonDestruction() {
+        return reasonDestruction;
+    }
 }

@@ -6,8 +6,7 @@
  * @version (a version number or a date)
  */
 
-public interface DestructibleElement
-{
+public interface DestructibleElement{
     /**
      * determina si el objeto fue destruido
      */
@@ -20,4 +19,5 @@ public interface DestructibleElement
      */
     void autoDestruction(String reason);
 
+    String getReasonDestruction();
 }

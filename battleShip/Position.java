@@ -2,7 +2,18 @@ public class Position {
 
     private int longitude;
     private int latitude;
-
+    
+    /**
+     * Crea una posición con una longitud y una latitud dadas.
+     *
+     * @param longitude longitud inicial
+     * @param latitude latitud inicial
+     */
+    public Position(int longitude, int latitude) {
+        this.longitude = longitude;
+        this.latitude = latitude;
+    }
+    
     /**
      * retorna la longitud
      */

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Plane
+comment1.params=longitude\ latitude\ plate
+comment1.target=Plane(int,\ int,\ java.lang.String)
+comment1.text=\r\n\ Crea\ un\ avi\u00F3n\ con\ su\ posici\u00F3n\ inicial\ y\ su\ placa.\r\n\r\n\ @param\ longitude\ longitud\ inicial\ del\ avi\u00F3n\r\n\ @param\ latitude\ latitud\ inicial\ del\ avi\u00F3n\r\n\ @param\ plate\ placa\ del\ avi\u00F3n\r\n
+comment2.params=
+comment2.target=boolean\ isWeak()
+comment2.text=\r\n\ determina\ si\ el\ avion\ es\ debil\r\n\ \r\n\ @return\ devuelve\ false\ si\ el\ avion\ tiene\ un\ piloto\ principal,\ de\ lo\ contrario\r\n\ devuelve\ true\r\n
+comment3.params=
+comment3.target=boolean\ isInAir()
+comment3.text=\r\n\ dice\ si\ el\ avion\ se\ encuentra\ en\ el\ aire\r\n
+comment4.params=longitude\ latitude
+comment4.target=boolean\ willBeDestroyed(int,\ int)
+comment5.params=reason
+comment5.target=void\ autoDestruction(java.lang.String)
+numComments=6

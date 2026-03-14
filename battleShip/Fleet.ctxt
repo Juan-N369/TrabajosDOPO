@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Fleet
+comment1.params=
+comment1.target=java.util.ArrayList\ weakMachines()
+comment1.text=\r\n\ determina\ las\ maquinas\ de\ la\ flota\ que\ se\ consideran\ debiles\r\n\ \r\n\ @return\ ArrayList\ que\ contiene\ las\ maquinas\ que\ se\ encontraron\ como\ debiles\r\n
+comment2.params=longitude\ latitude
+comment2.target=java.util.ArrayList\ willBeDestroyed(int,\ int)
+comment2.text=\r\n\ determina\ que\ maquinas\ que\ se\ encuentran\ en\ la\ posicion\ dada\ seran\ destruidas\r\n\ \r\n\ @param\ longitude\ es\ la\ longitud\ donde\ se\ hara\ el\ ataque\r\n\ @param\ latitude\ es\ la\ latitud\ donde\ se\ hara\ el\ ataque\r\n\ @return\ arraylist\ de\ las\ maquinas\ que\ serian\ destruidas\r\n
+comment3.params=dLong\ dLat
+comment3.target=void\ advance(int,\ int)
+comment3.text=\r\n\ hace\ que\ todas\ las\ maquinas\ de\ la\ flota\ que\ no\ se\ salgan\ del\ mapa\ al\ avanzar\r\n\ avancen\ cierta\ longitud\ y\ latitud\ desde\ su\ posicion\ actual\r\n\ \r\n\ @param\ dLon\ es\ el\ avance\ en\ longitude\r\n\ @param\ dLat\ es\ el\ avance\ en\ latitude\r\n
+comment4.params=
+comment4.target=java.util.ArrayList\ destroyedMachines()
+comment4.text=\r\n\ Determina\ todas\ las\ m\u00E1quinas\ y\ marinos\ que\ se\ encuentran\ destruidos.\r\n\ \r\n\ @return\ devuelve\ un\ arraylist\ con\ los\ elementos\ destruidos\r\n
+comment5.params=
+comment5.target=void\ updateCapsulesState()
+numComments=6

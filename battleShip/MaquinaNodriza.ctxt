@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MaquinaNodriza
+comment0.text=\r\n\ Write\ a\ description\ of\ interface\ MaquinaNodriza\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=java.lang.String\ giveInstruction()
+comment1.text=\r\n\ Las\ maquinas\ Nodrizas\ tienen\ como\ responsabilidad\ dar\ instrucciones\r\n\ \r\n\ @return\ devuelve\ un\ String\ con\ instrucciones\ especificas\r\n
+comment2.params=capsula
+comment2.target=void\ addCapsula(CapsulaSubmarina)
+comment2.text=\r\n\ Registra\ una\ c\u00E1psula\ submarina\ que\ depende\ de\ esta\ nodriza.\r\n\r\n\ @param\ capsula\ c\u00E1psula\ dependiente\r\n
+numComments=3

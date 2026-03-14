@@ -5,16 +5,22 @@ public class Board {
     private ArrayList<Fleet> fleets;
     private int radius;
     
-    public boolean validPosicion(int longitude ,int latitude){
-        boolean valid = false;
-        int x = longitude;
-        int y = latitude;
-        
-        if (x * x + y * y <= radius * radius) {
-            valid = true;    
-        }
-        
-        return valid;
+    public Board(int radius) {
+        this.radius = radius;
+        fleets = new ArrayList<>();
+    }
+    
+    public int getRadius() {
+        return radius;
+    }
+    
+    public void addFleet(Fleet fleet) {
+        fleets.add(fleet);
+    }
+    
+    public boolean isAValidLocation(int longitude, int latitude)
+    {
+        return (longitude - radius) * (longitude - radius) + latitude * latitude <= radius * radius;
     }
     
 }

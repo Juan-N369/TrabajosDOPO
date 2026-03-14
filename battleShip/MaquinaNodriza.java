@@ -6,7 +6,7 @@
  * @version (a version number or a date)
  */
 
-public interface MaquinaNodriza
+public interface MaquinaNodriza extends DestructibleElement
 {
     /**
      * Las maquinas Nodrizas tienen como responsabilidad dar instrucciones
@@ -14,4 +14,13 @@ public interface MaquinaNodriza
      * @return devuelve un String con instrucciones especificas
      */
     String giveInstruction();
+
+    /**
+     * Registra una cápsula submarina que depende de esta nodriza.
+     *
+     * @param capsula cápsula dependiente
+     */
+    void addCapsula(CapsulaSubmarina capsula);
+
+
 }

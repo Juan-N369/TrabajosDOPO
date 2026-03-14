@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=AircraftCarrier
+comment0.text=\r\n\ Representa\ un\ portaaviones\ de\ la\ flota.\r\n\ Un\ portaaviones\ es\ un\ barco\ que\ adem\u00E1s\ puede\ transportar\ aviones.\r\n
+comment1.params=longitude\ latitude\ sailors\ number\ capacity
+comment1.target=AircraftCarrier(int,\ int,\ java.util.Collection,\ int,\ int)
+comment1.text=\r\n\ Crea\ un\ portaaviones\ con\ una\ posici\u00F3n\ inicial,\ sus\ marinos,\r\n\ su\ n\u00FAmero\ y\ su\ capacidad.\r\n\r\n\ @param\ longitude\ longitud\ inicial\ del\ portaaviones\r\n\ @param\ latitude\ latitud\ inicial\ del\ portaaviones\r\n\ @param\ sailors\ marinos\ asignados\ al\ portaaviones\r\n\ @param\ number\ n\u00FAmero\ identificador\ del\ portaaviones\r\n\ @param\ capacity\ capacidad\ de\ aviones\r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getAirPlanes()
+comment2.text=\r\n\ Retorna\ la\ colecci\u00F3n\ de\ aviones\ del\ portaaviones.\r\n\r\n\ @return\ colecci\u00F3n\ de\ aviones\r\n
+comment3.params=plane
+comment3.target=void\ addPlane(Plane)
+comment3.text=\r\n\ Agrega\ un\ avi\u00F3n\ al\ portaaviones.\r\n\r\n\ @param\ plane\ avi\u00F3n\ a\ agregar\r\n
+comment4.params=
+comment4.target=boolean\ isWeak()
+comment4.text=\r\n\ Determina\ si\ el\ portaaviones\ es\ d\u00E9bil.\r\n\ Es\ d\u00E9bil\ si\ el\ barco\ lo\ es\ o\ si\ alguno\ de\ sus\ aviones\ en\ el\ aire\ es\ d\u00E9bil.\r\n\r\n\ @return\ true\ si\ el\ portaaviones\ es\ d\u00E9bil,\ false\ en\ caso\ contrario\r\n
+numComments=5

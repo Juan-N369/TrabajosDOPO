@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Position
+comment1.params=longitude\ latitude
+comment1.target=Position(int,\ int)
+comment1.text=\r\n\ Crea\ una\ posici\u00F3n\ con\ una\ longitud\ y\ una\ latitud\ dadas.\r\n\r\n\ @param\ longitude\ longitud\ inicial\r\n\ @param\ latitude\ latitud\ inicial\r\n
+comment2.params=
+comment2.target=int\ getLongitude()
+comment2.text=\r\n\ retorna\ la\ longitud\r\n
+comment3.params=
+comment3.target=int\ getLatitude()
+comment3.text=\r\n\ retorna\ la\ latitud\r\n
+comment4.params=dLon\ dLat
+comment4.target=void\ move(int,\ int)
+comment4.text=\r\n\ mueve\ la\ posicion\ desde\ el\ punto\ en\ que\ se\ encuentra\ actualmente\r\n\ \r\n\ @param\ dLon\ dezplazamiento\ de\ la\ longitud\r\n\ @param\ dLat\ dezplazamiento\ de\ la\ latitud\r\n
+comment5.params=lon\ lat
+comment5.target=boolean\ samePosition(int,\ int)
+comment5.text=\r\n\ determina\ si\ la\ posicion\ dada\ es\ igual\ al\ de\ la\ posicion\r\n
+numComments=6
