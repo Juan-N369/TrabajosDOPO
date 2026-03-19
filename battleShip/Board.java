@@ -23,4 +23,23 @@ public class Board {
         return (longitude - radius) * (longitude - radius) + latitude * latitude <= radius * radius;
     }
     
+    /**
+     * mueve a todas las flotas del tablero una unidad al norte
+     * 
+     * @return numero de flotas que completaron el movimiento a norte.
+     */
+    public int toNorth(){
+        int fleetsMoved = 0;
+        
+        for (Fleet f: fleets){
+            try{
+                f.moveNorth();
+                fleetsMoved++;
+            }
+            catch (BattleShipException e){
+            }
+        }
+        
+        return fleetsMoved;
+    }
 }

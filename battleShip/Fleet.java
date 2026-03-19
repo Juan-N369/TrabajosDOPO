@@ -47,8 +47,10 @@ public class Fleet {
      * 
      * @param dLon es el avance en longitude
      * @param dLat es el avance en latitude
+     * 
+     * @throws BattleShipException si la nueva posicion de una de las maquinas no se encuentra en el tablero.
      */
-    public void advance(int dLong, int dLat)
+    public void advance(int dLong, int dLat) throws BattleShipException
     {
         for(Machine m : machines)
         {
@@ -58,6 +60,9 @@ public class Fleet {
             if(board.isAValidLocation(currentLon + dLong, currentLat + dLat))
             {
                 m.advance(dLong, dLat);
+            }
+            else{
+                throw new BattleShipException(BattleShipException.INVALID_MOVE);
             }
         }
     }
@@ -85,5 +90,12 @@ public class Fleet {
         return destroyed;
     }
     
-    
+    /**
+     * mueve a todas las maquinas de la flota una unidad al norte
+     * 
+     * @throws BattleShipException si advance genera una excepcion
+     */
+    public void moveNorth() throws BattleShipException{
+        advance(0, 1);
+    }
 }
