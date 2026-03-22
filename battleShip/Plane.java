@@ -58,4 +58,14 @@ public class Plane extends Machine {
         super.reasonDestruction = reason;
     }
     
+    /**
+     * devuelve el piloto que el avion tiene asignado
+     * 
+     * @return piloto d el avion
+     */
+    @Override
+    public Sailor getPilot(){
+        return pilot;
+    }
+    
 }

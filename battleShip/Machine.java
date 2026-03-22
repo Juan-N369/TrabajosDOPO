@@ -87,4 +87,15 @@ public abstract class Machine implements DestructibleElement{
     public String getReasonDestruction() {
         return reasonDestruction;
     }
+    
+    /**
+     * devuelve el piloto que a maquina tiene asignado
+     * 
+     * por defecto una maquina no tiene piloto
+     * 
+     * @return piloto de la maquina
+     */
+    public Sailor getPilot(){
+        return null;
+    }
 }

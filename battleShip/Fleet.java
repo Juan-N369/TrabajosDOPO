@@ -98,4 +98,55 @@ public class Fleet {
     public void moveNorth() throws BattleShipException{
         advance(0, 1);
     }
+    
+    /**
+     * determina el poder que tiene actualmente la maquina
+     * 
+     * @return el poder de la flota, el cual es la cantidad de maquinas
+     * que no son debiles.
+     * 
+     * @throws BattleShipException si hay menos marineros que maquinas
+     */
+    public int power() throws BattleShipException{
+        int powerFleet = 0;
+        boolean weak;
+        
+        if(sailors.size() < machines.size()){
+            throw new BattleShipException(BattleShipException.LESS_SAILORS_THAN_MACHINES);
+        }
+        
+        for(Machine m: machines){
+            weak = m.isWeak();
+            if(!weak){
+                powerFleet++;
+            }
+        }
+        
+        return powerFleet;
+    }
+    
+    /**
+     * determina si la flota tiene un piloto infiltrado
+     * 
+     * @return true si lo tiene, false si no lo tiene
+     * 
+     * @throws BattleShipException si la flota no tiene asignados marineros
+     */
+    public boolean hasPilotInfiltrated() throws BattleShipException{
+        boolean itHas = false;
+        
+        if(sailors.isEmpty()){
+            throw new BattleShipException(BattleShipException.NOT_ASSIGNED_SAILORS);
+        }
+        
+        for(Machine m: machines){
+            Sailor pilot = m.getPilot();
+            if(pilot != null && !sailors.contains(pilot)){
+                itHas = true;
+                break;
+            }
+        }
+        
+        return itHas;
+    }
 }
